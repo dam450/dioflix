@@ -26,7 +26,7 @@ header .container {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid black;
+  border: none; /* 1px solid black; */
 }
 
 header .logo {
