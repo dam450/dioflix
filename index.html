@@ -10,10 +10,20 @@
     <!-- responsividade -->
     <link rel="stylesheet" href="style/responsive.css" />
 
+    <!-- video popout -->
+    <script defer src="js/videopopup.js"></script>
+    <link rel="stylesheet" href="style/videopopup.css" />
+
+    <!-- jquery core -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
     <!-- owl css -->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css" />
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css" />
-    <script defer src="js/owl/jquery.min.js"></script>
     <script defer src="js/owl/owl.carousel.min.js"></script>
     <script defer src="js/owl/setup.js"></script>
 
@@ -44,7 +54,7 @@
             nos EUA neste drama vencedor do Emmy e do Globo de Ouro.
           </p>
           <div class="botoes">
-            <button role="button" class="botao">
+            <button onclick="playvid(0)" role="button" class="botao">
               <i class="fas fa-play-circle"></i>Assistir Agora
             </button>
             <button role="button" class="botao">
@@ -53,6 +63,8 @@
           </div>
         </div>
       </div>
+
+      <!-- carousel -->
       <div class="carrosel-filme">
         <div class="owl-carousel owl-theme">
           <div class="item">
@@ -85,5 +97,13 @@
         </div>
       </div>
     </main>
+
+    <div id="vidBox">
+      <div id="videCont">
+        <video id="hoc" controls>
+          <source src="video/house_of_Cards.webm" type="video/webm" />
+        </video>
+      </div>
+    </div>
   </body>
 </html>
